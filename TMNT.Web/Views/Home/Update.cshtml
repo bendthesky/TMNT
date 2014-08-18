@@ -1,0 +1,10 @@
+﻿@model TMNT.Data.Models.NinjaTurtle
+<div id="updateDiv">
+    <form action="/Home/Update/@Model.Id" method="post">
+        <input type="text" name="name" value="@Model.Name" /><br /><br />
+        <input type="text" name="picture" value="@Model.Picture" /><br /><br />
+        <input type="text" name="weapon" value="@Model.Weapon" /><br /><br />
+        <textarea name="description" rows="5" cols="50">@Model.Description</textarea><br /><br />
+        <a href="/Home/Delete/@Model.Id"><div class="btn btn-danger"> Delete </div></a><input type="submit" class="btn btn-success" value=" Update " />
+    </form>
+</div>

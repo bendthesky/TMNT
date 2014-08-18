@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Teenage Mutant Ninja Turtles</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <img src="http://img4.wikia.nocookie.net/__cb20140528204411/epicrapbattlesofhistory/images/2/2f/The_Teenage_Mutant_Ninja_Turtles_Based_on_Pic.jpg" id="bgImg">
+    <div id="bgColor"></div>
+    
+    <div id="headerBar">
+        <a href="/Home/Index">
+            <img src="https://nerdragetoys.com/wp-content/uploads/2013/01/TMNT_1987_Series_logo1.png" class="col-md-offset-1" style="height:55px; width:auto;">
+        </a>
+    </div>
+    <div id="headerPad"></div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>@DateTime.Now.Year - Ashton French</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/_Script.js"></script>
+</body>
+</html>

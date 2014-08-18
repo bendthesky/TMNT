@@ -1,0 +1,98 @@
+﻿body {
+    padding:0px;
+    font-size:3em;
+}
+
+#bgImg {
+    position:fixed;
+    top:20%;
+    left:25%;
+    width:50%;
+    height:auto;
+    z-index:-2;
+}
+
+#bgColor {
+    background-color:#138a06;
+    position:fixed;
+    height:100%;
+    width:100%;
+    opacity:0.9;
+    z-index:-1;
+}
+
+.btn {
+    font-size:0.5em;
+}
+
+a:link {
+    color:#252525;
+}
+
+a:hover {
+    color:#696969;
+    text-decoration:none;
+}
+
+a:active {
+    color:#252525;
+}
+
+a:visited {
+    color:#252525;
+}
+
+#headerBar {
+    background-color:#10714a;
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index:10;
+}
+#headerPad {
+    position:relative;
+    width:100%;
+    height:55px;
+}
+
+#contentDiv {
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
+#turtleTable {
+    width:100%;
+}
+
+#turtleContainer {
+    text-align:center;
+}
+
+#listedPic {
+    width:250px;
+    height:250px;
+}
+
+#turtlePic {
+    width:500px;
+    height:auto;
+}
+
+#turtleName {
+    font-size:2em;
+    margin-bottom:25px;
+}
+
+#addDiv {
+    text-align:center;
+    font-size:0.7em;
+    padding:50px;
+}
+
+#updateDiv {
+    text-align:center;
+    font-size:0.7em;
+    padding:50px;
+}

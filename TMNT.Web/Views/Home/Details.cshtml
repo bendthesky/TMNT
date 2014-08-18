@@ -1,0 +1,10 @@
+﻿@model TMNT.Data.Models.NinjaTurtle
+<div id="turtleContainer">
+        <h2 id="turtleName">@Model.Name</h2>
+
+    <img src="@Model.Picture" id="turtlePic" /><br />
+    <span>Weapon: @Model.Weapon</span><br /><br />
+    <span>@Model.Description</span>
+</div>
+<br /><br />
+<a href="/Home/Update/@Model.Id"><div class="btn btn-primary"> Edit Info </div></a>

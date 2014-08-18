@@ -1,0 +1,24 @@
+﻿@model List<TMNT.Data.Models.NinjaTurtle>
+
+<div id="contentDiv">
+    <img src="http://www.tmnttoys.com/03logo.gif" style="width:50%; height:auto; margin-top:8%;">
+    <h3 style="margin-bottom:150px;">Cowabunga dude! Welcome to the Teenage Mutant Ninja Turtles information page.<br />We've got this site to let the nets know who we are, because that's totally rad. Check out our stuff dude!</h3>
+    
+    <table id="turtleTable">
+        @foreach (var Turtle in Model)
+        {
+            <tr>
+                <td>
+                    <a href="/Home/Details/@Turtle.Id">
+                        <img src="@Turtle.Picture" id="listedPic" />
+                        <br />
+                        @Turtle.Name
+                    </a>
+                    <br /><br />
+                </td>
+            </tr>
+        }
+    </table>
+    <br /><br />
+    <a href="/Home/Add"><div class="btn btn-success"> Add A New Turtle </div></a>
+</div>
